@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Platos con Ingredientes</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>🍽️ Consulta de Platos 🍽️</h1>
+    <input type="text" id="searchInput" placeholder="🔎 Buscar plato..." />
+    <div id="platosContainer" class="platos-grid"></div>
+  </div>
+
+  <!-- Modal Imagen -->
+  <div id="imageModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('imageModal')">&times;</span>
+      <img id="modalImage" src="" alt="Imagen del plato" />
+    </div>
+  </div>
+
+
+  <!-- Modal Reporte -->
+  <div id="reportModal" class="modal hidden">
+    <div class="modal-content report">
+      <span class="close" onclick="closeModal('reportModal')">&times;</span>
+      <h2>Reportar Ingredientes Faltantes</h2>
+      <form id="reportForm">
+        <!-- Contenedor de los checkboxes -->
+        <div id="checkboxContainer" class="checkbox-container"></div>
+        <button type="submit" class="btn animate">Enviar por WhatsApp</button>
+      </form>
+    </div>
+  </div>
+
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
