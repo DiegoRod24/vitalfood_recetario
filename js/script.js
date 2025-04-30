@@ -81,6 +81,6 @@ function sendReport() {
     return;
   }
   const mensaje = "Ingredientes por reportar:\n" + selected.join(", ");
-  const url = "https://wa.me/51977509592?text=" + encodeURIComponent(mensaje);
+  const url = "https://wa.me/51998199885?text=" + encodeURIComponent(mensaje);
   window.open(url, "_blank");
 }
