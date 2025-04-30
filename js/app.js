@@ -110,7 +110,7 @@ document.getElementById("reportForm").addEventListener("submit", (e) => {
   e.preventDefault();
   const checked = Array.from(checkboxContainer.querySelectorAll("input:checked")).map(input => input.value);
   const msg = `Ingredientes faltantes: ${checked.join(", ")}`;
-  const url = `https://wa.me/51977509592?text=${encodeURIComponent(msg)}`;
+  const url = `https://wa.me/51998199885?text=${encodeURIComponent(msg)}`;
   window.open(url, "_blank");
 });
 
